@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Premium Hub - Unlock All Videos</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            min-height: 100vh;
+            padding: 10px;
+            padding-bottom: 160px;
+        }
+ .header {
+            text-align: center;
+            padding: 15px 10px;
+            border-bottom: 3px solid #e94560;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 12px;
+        }
+        h1 {
+            font-size: 22px;
+            background: linear-gradient(90deg, #e94560, #ff4757);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+            font-weight: 900;
+        }
+ .subtitle { font-size: 11px; color: #aaa; }
+ .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+ .banner-box {
+            background: #111;
+            border: 2px solid #222;
+            border-radius: 12px;
+            padding: 8px;
+            margin: 10px 0;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+ .unlock-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 20px 0;
+        }
+ .unlock-box {
+            background: linear-gradient(135deg, #e94560 0%, #c23616 100%);
+            border-radius: 14px;
+            padding: 28px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 8px 25px rgba(233,69,96,0.5);
+            border: 3px solid #ff4757;
+            position: relative;
+            min-height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+ .unlock-box:active {
+            transform: scale(0.96);
+            box-shadow: 0 4px 15px rgba(233,69,96,0.7);
+        }
+ .unlock-box.unlocked {
+            background: linear-gradient(135deg, #2ed573 0%, #1dd1a1 100%);
+            border-color: #2ed573;
+            box-shadow: 0 8px 25px rgba(46,213,115,0.5);
+        }
+ .lock-icon {
+            font-size: 46px;
+            margin-bottom: 10px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+ .unlock-text {
+            font-size: 17px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+        }
+ .unlock-sub {
+            font-size: 11px;
+            opacity: 0.95;
+            font-weight: 600;
+        }
+ .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #fff;
+            color: #e94560;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: 900;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+ .clicks-counter {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #0f0f1a;
+            border: 3px solid #00ff88;
+            padding: 10px 18px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 900;
+            color: #00ff88;
+            z-index: 9999;
+            box-shadow: 0 5px 20px rgba(0,255,136,0.4);
+        }
+ .warning {
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+            margin-top: 20px;
+            line-height: 1.6;
+            padding: 0 15px;
+        }
+
+    /* Tablet & Desktop */
+    @media (min-width: 768px) {
+        body { padding: 20px; padding-bottom: 160px; }
+    .container { max-width: 1100px; }
+    .unlock-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    .unlock-box:hover { transform: translateY(-8px); }
+        h1 { font-size: 30px; }
+    }
+    </style>
+
+    <!-- ======== ADSTERRA POPUNDERS ======== -->
+    <script src="https://assistedtogether.com/e7/3b/06/e73b06524e11df893cc35ee16d3fa466.js"></script>
+    <script src="https://assistedtogether.com/61/cd/97/61cd97252152b92575ffaa43a935f6b0.js"></script>
+    <script src="https://assistedtogether.com/0b/21/a9/0b21a9fb50c51e2b4ac0b6471034668f.js"></script>
+    <script src="https://assistedtogether.com/f6/60/16/f660164b8bdaf884d597c48d41b54042.js"></script>
+</head>
+<body>
+    <div class="clicks-counter" id="clickCounter">Clicks: 0/9</div>
+
+    <div class="container">
+        <div class="header">
+            <h1>🔞 PREMIUM VIDEO HUB</h1>
+            <p class="subtitle">1000+ Exclusive Videos - Tap to Unlock All</p>
+        </div>
+
+        <!-- ======== උඩ Navigator Banners 4 ======== -->
+        <div class="banner-box">
+            <script>atOptions={'key':'0e79d78a6acc11c99c4cb0dbe077978f','format':'iframe','height':90,'width':728,'params':{}};</script>
+            <script src="https://assistedtogether.com/0e79d78a6acc11c99c4cb0dbe077978f/invoke.js"></script>
+        </div>
+
+        <div class="banner-box">
+            <script>atOptions={'key':'31f9276ab33144f73259f510d9e63c60','format':'iframe','height':90,'width':728,'params':{}};</script>
+            <script src="https://assistedtogether.com/31f9276ab33144f73259f510d9e63c60/invoke.js"></script>
+        </div>
+
+        <div class="banner-box">
+            <script async="async" data-cfasync="false" src="https://assistedtogether.com/9803dd68b9a69585ee573ae238dd6de5/invoke.js"></script>
+            <div id="container-9803dd68b9a69585ee573ae238dd6de5"></div>
+        </div>
+
+        <div class="banner-box">
+            <script async="async" data-cfasync="false" src="https://assistedtogether.com/367bb8a68bb2d9d5ee3056d2b0d969e7/invoke.js"></script>
+            <div id="container-367bb8a68bb2d9d5ee3056d2b0d969e7"></div>
+        </div>
+
+        <!-- ======== මැද Video Unlock Buttons 3 - අලුත් Links 3 ======== -->
+        <div class="unlock-grid">
+            <a href="https://assistedtogether.com/b9zrwvb6wz?key=404c1f2b19c5f13d1575b39b7cb733ea" target="_blank" class="unlock-box" data-box="1">
+                <div class="badge">HD</div>
+                <div class="lock-icon">🔓</div>
+                <div class="unlock-text">UNLOCK ALL VIDEOS</div>
+                <div class="unlock-sub">500+ Premium Videos</div>
+            </a>
+
+            <a href="https://assistedtogether.com/u1rd1rr9f?key=b84232cc71cfe0403c72a32a41de5b3a" target="_blank" class="unlock-box" data-box="2">
+                <div class="badge">4K</div>
+                <div class="lock-icon">🔓</div>
+                <div class="unlock-text">UNLOCK ALL VIDEOS</div>
+                <div class="unlock-sub">300+ Exclusive Videos</div>
+            </a>
+
+            <a href="https://www.effectivecpmnetwork.com/hq06s9wfid?key=f860c30aafc5c1e8910af6ad19d0e26d" target="_blank" class="unlock-box" data-box="3">
+                <div class="badge">NEW</div>
+                <div class="lock-icon">🔓</div>
+                <div class="unlock-text">UNLOCK ALL VIDEOS</div>
+                <div class="unlock-sub">200+ Latest Videos</div>
+            </a>
+        </div>
+
+        <!-- ======== පහල Navigator Banners 4 ======== -->
+        <div class="banner-box">
+            <script>atOptions={'key':'0e79d78a6acc11c99c4cb0dbe077978f','format':'iframe','height':90,'width':728,'params':{}};</script>
+            <script src="https://assistedtogether.com/0e79d78a6acc11c99c4cb0dbe077978f/invoke.js"></script>
+        </div>
+
+        <div class="banner-box">
+            <script>atOptions={'key':'31f9276ab33144f73259f510d9e63c60','format':'iframe','height':90,'width':728,'params':{}};</script>
+            <script src="https://assistedtogether.com/31f9276ab33144f73259f510d9e63c60/invoke.js"></script>
+        </div>
+
+        <div class="banner-box">
+            <script async="async" data-cfasync="false" src="https://assistedtogether.com/9803dd68b9a69585ee573ae238dd6de5/invoke.js"></script>
+            <div id="container-9803dd68b9a69585ee573ae238dd6de5"></div>
+        </div>
+
+        <div class="banner-box">
+            <script async="async" data-cfasync="false" src="https://assistedtogether.com/367bb8a68bb2d9d5ee3056d2b0d969e7/invoke.js"></script>
+            <div id="container-367bb8a68bb2d9d5ee3056d2b0d969e7"></div>
+        </div>
+
+        <p class="warning">
+            You must be 18+ to enter. Tap any button to verify age and view sponsored content.<br>
+            This site contains advertisements. No explicit content hosted here.
+        </p>
+    </div>
+
+    <!-- Direct Link Popunder -->
+    <script>
+        document.addEventListener('click', function() {
+            window.open('https://assistedtogether.com/k8bbpxqqq?key=f9e93051b217612b11b90e84f591ab09', '_blank');
+        }, { once: true });
+    </script>
+
+    <script>
+        let totalClicks = 0;
+        const maxClicks = 9;
+        const boxes = document.querySelectorAll('.unlock-box');
+        const counter = document.getElementById('clickCounter');
+
+        boxes.forEach((box) => {
+            box.addEventListener('click', () => {
+                totalClicks++;
+                box.classList.add('unlocked');
+                box.querySelector('.lock-icon').textContent = '✅';
+                box.querySelector('.unlock-text').textContent = 'OPENED';
+                box.querySelector('.unlock-sub').textContent = 'Enjoy Content';
+
+                counter.textContent = `Clicks: ${totalClicks}/${maxClicks}`;
+
+                if (totalClicks >= 3) {
+                    counter.style.borderColor = '#ffa502';
+                    counter.style.color = '#ffa502';
+                }
+                if (totalClicks >= 6) {
+                    counter.style.borderColor = '#ff6348';
+                    counter.style.color = '#ff6348';
+                }
+                if (totalClicks >= maxClicks) {
+                    counter.textContent = '✓ All Opened';
+                    counter.style.borderColor = '#2ed573';
+                    counter.style.color = '#2ed573';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
